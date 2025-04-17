@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import "tailwindcss";
+
+
+
+@theme {
+
+    --font-display: 'Baloo 2', sans-serif;
+    --font-mono: 'Roboto', sans-serif;
+
+    --color-yellow-100: #F1E9C9;
+    --color-yellow-200: #DBAC2C;
+    --color-yellow-300: #C47F17;
+
+    --color-purple-100: #EBE5F9;
+    --color-purple-200: #8047F8;
+    --color-purple-300: #4B2995;
+
+    --color-white-100: #FAFAFA;
+    --color-white-200: #F3F2F2;
+    --color-black-100: #403937;
+    --color-black-200: #272221;
+    --color-gray-100: #574F4D;
+    --color-gray-200: #8D8686;
+    --color-gray-300: #E6E5E5;    
+    --color-gray-50: #EDEDED;
+    --color-gray-400: #D7D5D5; 
+
+}
+
+
+.border-gradient {
+    width: 526px;
+    height: 270px;
+    background: 
+    linear-gradient(white 0 0) padding-box, /*this is your white background*/
+    linear-gradient(to right, #DBAC2C 0%, #8047F8  100% ) border-box;
+  border: 2px solid transparent;
+  border-radius: 6px 36px 6px 36px;
+  }
+
+
+
+
+
+
+
+
+
+
+
