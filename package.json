@@ -2,15 +2,15 @@
   "name": "coffee-delivery",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://RamonVBN.github.io/coffee-delivery",
+  "homepage": "https://ramonvbn.github.io/coffee-delivery",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b --out-dir build && vite build",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
