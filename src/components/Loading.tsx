@@ -1,5 +1,5 @@
 import cafeGif from '../assets/Coffee Waiting Sticker.gif'
-import cafeGif2 from '../assets/Coffee Time Sticker by KUDU Coffee Roasters.gif'
+// import cafeGif2 from '../assets/Coffee Time Sticker by KUDU Coffee Roasters.gif'
 
 
 
