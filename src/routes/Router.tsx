@@ -11,8 +11,8 @@ export function Router(){
         <Route path="/coffee-delivery/" element={<AppLayout/>}>
 
             <Route path="/coffee-delivery/" element={<Home/>}/>
-            <Route path="/coffee-delivery/orderconfirm" element={<OrderConfirm/>}/>
-            <Route path="/coffee-delivery/confirmed" element={<Confirmed/>}/>
+            <Route path="/orderconfirm" element={<OrderConfirm/>}/>
+            <Route path="/confirmed" element={<Confirmed/>}/>
         </Route>
     </Routes>
 }
