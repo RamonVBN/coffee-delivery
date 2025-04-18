@@ -69,49 +69,49 @@ export function Input({ label, divVariant = 'CepNumeroBairro', inputVariant = 'c
                 //         console.log(letter)
                 //     }
                 //    })
-            
-                   const inputValueFiltered = inputValue.filter((letter) => letter === '-' || !isNaN(Number(letter) ))
-
-
-                   if (name.includes('cep')) {
+                
+                const inputValueFiltered = inputValue.filter((letter) => letter === '-' || !isNaN(Number(letter) ))
+                
+                
+                if (name.includes('cep')) {
                     
                     if (inputValueFiltered.length === 5) {
-
-                        if (cepHistory) {
                         
+                        if (cepHistory) {
+                            
                             return
-
+                            
                         }else{
-
+                            
                             inputValueFiltered.push('-')
                         }
-
-                             
+                        
+                        
                     }
-
                     
-
-                   }
-
-                   value =  inputValueFiltered.join('')
-                  
-                   if (inputValueFiltered.length >= 5) {
-
-                    setCepHistory(true)
-
-                   }else {
-
-                    setCepHistory(false)
-                   }
-                   
-
+                    
+                    
+                }
                 
-                   return setValue(name, value)
-
-               }else{
-
+                value =  inputValueFiltered.join('')
+                
+                if (inputValueFiltered.length > 5) {
+                    
+                    setCepHistory(true)
+                    
+                }else {
+                    
+                    setCepHistory(false)
+                }
+                
+                
+                
+                return setValue(name, value)
+                
+            }else{
+                
                 const inputValue = value.split('')
-            
+                
                 //    inputValue.map((letter) => {
                 //     if (isNaN(Number(letter))) {
                         
@@ -119,8 +119,10 @@ export function Input({ label, divVariant = 'CepNumeroBairro', inputVariant = 'c
                 //     }
                 //    })
             
-                   const inputValueFiltered = inputValue.filter((letter) => isNaN(Number(letter)))
-            
+                   const inputValueFiltered = inputValue.filter((letter) => Number(letter) === 0 && letter == ' ' || isNaN(Number(letter)))
+
+                   
+                   
                    value =  inputValueFiltered.join('')
                    return setValue(name, value)
 
