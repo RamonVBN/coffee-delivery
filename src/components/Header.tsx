@@ -41,7 +41,7 @@ export function Header(){
     }, [items])
     return (
         <nav className=' w-full flex items-center p-[160px] py-8 justify-between '>
-            <NavLink to={'/'}>
+            <NavLink to={'/coffee-delivery/'}>
                 <img className='w-[85px] h-[40px]' src={logo} alt="Logo" />
                 
             </NavLink>
@@ -53,7 +53,7 @@ export function Header(){
                         Arapiraca, AL
                     </div>
 
-                    <a onClick={() => navigate("/orderconfirm")} className='w-[38px] h-[38px] flex items-center justify-center bg-yellow-100 rounded-[6px] cursor-pointer ' >
+                    <a onClick={() => navigate("/coffee-delivery/orderconfirm")} className='w-[38px] h-[38px] flex items-center justify-center bg-yellow-100 rounded-[6px] cursor-pointer ' >
 
                         <div>
 

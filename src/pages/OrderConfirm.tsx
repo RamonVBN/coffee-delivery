@@ -174,7 +174,7 @@ export function OrderConfirm(){
     setTimeout(() => {
         
         handleRemoveLoading(true)
-        navigate('/confirmed', {state: {fromSubmit: true}})
+        navigate('/coffee-delivery/confirmed', {state: {fromSubmit: true}})
         addNewAddress(newAddress)
     }, 1000);
 
