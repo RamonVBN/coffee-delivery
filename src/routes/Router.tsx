@@ -8,11 +8,11 @@ import { Confirmed } from "../pages/Confirmed"
 export function Router(){
 
     return <Routes>
-        <Route path="/" element={<AppLayout/>}>
+        <Route path="/coffee-delivery/" element={<AppLayout/>}>
 
-            <Route path="/" element={<Home/>}/>
-            <Route path="/orderconfirm" element={<OrderConfirm/>}/>
-            <Route path="/confirmed" element={<Confirmed/>}/>
+            <Route path="/coffee-delivery/" element={<Home/>}/>
+            <Route path="/coffee-delivery/orderconfirm" element={<OrderConfirm/>}/>
+            <Route path="/coffee-delivery/confirmed" element={<Confirmed/>}/>
         </Route>
     </Routes>
 }
